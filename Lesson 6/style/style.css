@@ -15,7 +15,8 @@ html  {
 }
 
 /*general styles for small and big sections */
-.smallSection, .bigSection {
+.smallSection,
+.bigSection {
     position: relative;
     float: left;
     margin: 10px;
@@ -40,7 +41,10 @@ html  {
     height: 100px;
 }
 
-.like, .basket, .exclusive, .new {
+.like,
+.basket,
+.exclusive,
+.new {
     position: absolute;
     top: 45px;
     float: left;
@@ -67,7 +71,8 @@ html  {
     transition: opacity 1s, visibility 0s;
 }
 
-.smallSection:hover .like, .bigSection:hover .like {
+.smallSection:hover .like,
+.bigSection:hover .like {
     opacity: 1;
     transition: opacity 0.5s, visibility 0s 0.5s;
 
@@ -79,7 +84,8 @@ html  {
 
 }
 
-.smallSection:hover .basket, .bigSection:hover .basket {
+.smallSection:hover .basket,
+.bigSection:hover .basket {
     opacity: 1;
     transition: opacity 0.5s, visibility 0s 0.5s;
 }
@@ -97,7 +103,9 @@ html  {
     width: 233px;
 }
 
-.productName, .productDescription, .productPrice {
+.productName,
+.productDescription,
+.productPrice {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -172,9 +180,6 @@ html  {
 
 }
 
-.leftOriented.likeAndBasket {
-    left: 303px;
-}
 
 .leftFigure {
     width: 280px;
@@ -324,3 +329,7 @@ html  {
 }
 
 /*!!! end LAST ITEM*/
+
+.productList .productName {
+    color: green;
+}

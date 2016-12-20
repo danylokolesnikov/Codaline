@@ -50,6 +50,11 @@ html  {
     float: left;
 }
 
+.like,
+.basket {
+  cursor: pointer;
+}
+
 .exclusive {
     left: 50%;
     top: 42px;
@@ -329,7 +334,3 @@ html  {
 }
 
 /*!!! end LAST ITEM*/
-
-.productList .productName {
-    color: green;
-}

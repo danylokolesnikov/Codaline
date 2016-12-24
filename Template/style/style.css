@@ -4,6 +4,8 @@
   src: url('../fonts/AvenirLTStd-Book.otf');
 }
 
+
+
 /* general styles*/
 a {
   text-decoration: none;
@@ -21,13 +23,19 @@ a {
   margin: auto;
   max-width: 960px;
   width: 100%;
-  height: 100%;
+  min-height: inherit;
 }
 
 /* begin HEADER styles*/
 .site-header,
 .site-nav {
   overflow: hidden;
+}
+
+.site-header{
+  position: fixed;
+  background: white;
+  width: 100%;
 }
 
   .site-header a {
@@ -75,7 +83,8 @@ a {
 /*begin OUR-MISSION styles*/
 
 .our-mission {
-  height: 600px;
+  min-height: 600px;
+  margin: 82px 0 0 0;
   color: #ffffff;
   background: url('../img/Mount.jpg') no-repeat center;
   background-size: cover;
@@ -95,7 +104,7 @@ a {
 
 .text-p {
   margin: auto;
-  width: 820px;
+  max-width: 820px;
   text-align: center;
   font-size: 15px;
 }
@@ -105,7 +114,7 @@ a {
 /*begin ABOUT styles*/
 
 .about {
-  height: 250px;
+  min-height: 250px;
   vertical-align: middle;
 }
 
@@ -122,7 +131,7 @@ a {
 
 /* begin TEAM*/
 .team {
-  height: 600px;
+  min-height: 600px;
 
   color: #ffffff;
   background-color: #0ebfdd;
@@ -136,8 +145,8 @@ a {
 
 .team-list {
   overflow: hidden;
-  width: 590px;
-  height: 300px;
+  max-width: 590px;
+  min-height: 300px;
   margin: auto;
 }
 
@@ -177,7 +186,7 @@ a {
 
 .button-work {
   padding: 15px 35px;
-
+  margin-bottom: 40px;
   text-transform: uppercase;
   font-weight: bold;
   color: #ffffff;
@@ -185,12 +194,17 @@ a {
   border: 1px solid #ffffff;
   border-radius: 25px;
 }
+
+.button-work:hover {
+  background-color: #ffffff;
+  color: #0ebfdd;
+}
 /*end TEAM*/
 
 /*begin MAP styles*/
 
 .map {
-  height: 600px;
+  min-height: 600px;
   overflow: hidden;
 }
 
@@ -202,7 +216,7 @@ a {
 
 /*begin FOOTER*/
 .site-footer {
-  height: 120px;
+  min-height: 120px;
 
   color: #73767a;
   background-color: #45494d;
